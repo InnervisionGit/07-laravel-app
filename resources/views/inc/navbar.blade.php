@@ -21,6 +21,9 @@
           </li>
           
         </ul>
+        <ul class="nav navbar-nav ml-auto">
+          <li><a class="nav-link" aria-current="page" href="/posts/create">Create Post</a></li>
+        </ul>
         
       </div>
     </div>

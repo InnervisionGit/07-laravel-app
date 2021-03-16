@@ -3,8 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+        <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>{{config("app.name", "Laravel App")}}</title>
+        <script src="{{ asset('ckeditor/ckeditor.js') }}" defer></script>
+
     </head>
     <body >
         @include("inc.navbar")
@@ -12,5 +14,12 @@
             @include("inc.messages")
             @yield("content")
         </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {    
+                $('.ckeditor').ckeditor();    
+            });    
+        </script>
+    
     </body>
 </html>

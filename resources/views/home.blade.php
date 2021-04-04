@@ -15,6 +15,11 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    
+                    <br />    
+                    <a href ="/posts/create" class="btn btn-primary" style="margin: 10px 0px 10px 0px">Create Post</a>
+                    <h3>Your Blog Posts</h3>
+
                 </div>
             </div>
         </div>
